@@ -1,6 +1,6 @@
 const searchBtnEl = document.querySelector("#searchBtn");
 const apiKey = "064b85f77ad8cc613db100a15ac30050";
-const baseUrl = "http://api.openweathermap.org";
+const baseUrl = "https://api.openweathermap.org";
 
 
 // <----- Current weather ----->
@@ -50,7 +50,7 @@ function getAndPlotCurentWeather(lat, lng, cityName) {
             const humidity = data.main.humidity + " %"
             const curDateInUTC = data.dt;
             localStorage.setItem("curDate", dayjs.unix(curDateInUTC).format("MM/DD/YYYY"));
-            const iconPath = "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
+            const iconPath = "https://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png";
             console.log(`Got back: temp: ${temp}, wind: ${wind} and humidity: ${humidity} and icon path: ${iconPath}`);
             createCurrentWeatherCard(cityName, temp, wind, humidity, iconPath);
         });
@@ -116,7 +116,7 @@ function parseAndRender5DayForecastToUi(data) {
 
         // weather icon
         const imgEl = document.createElement("img");
-        imgEl.src = "http://openweathermap.org/img/wn/" + data[i].weather[0].icon + "@2x.png";;
+        imgEl.src = "https://openweathermap.org/img/wn/" + data[i].weather[0].icon + "@2x.png";;
         imgEl.alt = "weather icon image"
         imgEl.style.width = "50px";
         imgEl.style.height = "50px";
