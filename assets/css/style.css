@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header + children styles  */
+header {
+    border: 1px solid red;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+
+.c1 {
+    border: 2px solid blue;
+}
+
+.c2 {
+    border: 2px solid purple;
+}
+
+.c3 {
+    border: 2px solid cyan;
+}
+
+
+/* Main and its children */
+#cityName,
+#searchBtn {
+    width: 100%;
+}
+
+#todaysWeather {
+    margin-bottom: 20px;
+}
