@@ -7,4 +7,4 @@ A weather dashboard that lets user enter the city name and provides the current 
 ![alt_text](assets/images/weather_dashboard.png)
 
 ## Usage
-https://amritank.github.io/an-blog/
+https://amritank.github.io/weather-capp/
